@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -98,15 +99,32 @@
 
 <!------------------- HERO ------------------->
 <section class="sec-hero" id="hero">
-	<div class="hero-video" data-aos="fade-in" data-aos-duration="500">
-		<video poster="images/hero-thumb.jpg" muted autoplay loop class="d-none d-md-block pc" id="hero-video-pc">
-			<source src="video/hero.mp4" type="video/mp4">
-		</video>
-		<video poster="images/hero-thumb.jpg" muted autoplay loop class="d-md-none mobile" id="hero-video-mobile">
-			<source src="video/hero.mp4" type="video/mp4">
-		</video>
+	<div class="hero-video anim">
+		<div class="hero-ship" id="hero-ship">
+			<div class="hero-ship-overlay">
+				<img src="images/ship-anim/earth.png" alt="" class="mw-100 earth" data-aos="zoom-in-up" data-aos-duration="1800" data-aos-delay="500" data-aos-once="false">
+				<img src="images/ship-anim/hero-left-ship1.png" alt="" class="mw-100 hero-ship-l-1" data-aos="zoom-out-right" data-aos-delay="1000" data-aos-duration="2500">
+				<img src="images/ship-anim/hero-left-ship2.png" alt="" class="mw-100 hero-ship-l-2" data-aos="fade-up-right" data-aos-delay="200" data-aos-duration="1800">
+				<img src="images/ship-anim/hero-left-ship3.png" alt="" class="mw-100 hero-ship-l-3" data-aos="fade-up-right" data-aos-delay="500" data-aos-duration="2000">
+				<img src="images/ship-anim/hero-left-ship4.png" alt="" class="mw-100 hero-ship-l-4" data-aos="fade-up-right" data-aos-delay="500" data-aos-duration="1800">
+			</div>
+			<div class="hero-ship-overlay">
+				<img src="images/ship-anim/hero-right-ship1.png" alt="" class="mw-100 hero-ship-r-1" data-aos="zoom-out-left" data-aos-delay="500" data-aos-duration="2500">
+				<img src="images/ship-anim/hero-right-ship2.png" alt="" class="mw-100 hero-ship-r-2" data-aos="zoom-in-left" data-aos-delay="200" data-aos-duration="2000">
+				<img src="images/ship-anim/hero-right-ship3.png" alt="" class="mw-100 hero-ship-r-3" data-aos="zoom-in-left" data-aos-delay="200" data-aos-duration="1500">
+			</div>
+			<button type="button" class="video" onclick="startvideo()" id="startvideo" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500"></button>
+		</div>
+		<div class="video-wrap" id="video-wrap">
+			<video muted autoplay loop class="d-none d-md-block" id="hero-video-pc">
+				<source src="video/hero.mp4" type="video/mp4">
+			</video>
+			<video muted autoplay loop class="d-md-none" id="hero-video-mobile">
+				<source src="video/hero.mp4" type="video/mp4">
+			</video>
 
-		<div class="container"><button type="button" class="btn btn-main active" onclick="playpause()" data-bs-toggle="button" autocomplete="off" id="playpause-btn"><span class="me-2"></span></button></div>
+			<div class="container"><button type="button" class="btn btn-main active" onclick="playpause()" data-bs-toggle="button" autocomplete="off" id="playpause-btn"><span class="me-2"></span></button></div>
+		</div>
 	</div>
 	<div class="container">
 		<!------------------- TOKENs ------------------->
